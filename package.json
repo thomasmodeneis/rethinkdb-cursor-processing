@@ -1,0 +1,33 @@
+{
+  "name": "rethinkdb-cursor-processing",
+  "version": "1.1.1",
+  "author": {
+    "name": "Thomas Modeneis"
+  },
+  "dependencies": {
+    "async": "^2.0.0-rc.4"
+  },
+  "description": "Process cursor next from rethinkdb using async, thus avoiding JS Allocation failed - process out of memory.",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
+  },
+  "keywords": [
+    "cursor",
+    "cursor next",
+    "rethinkdb",
+    "stream"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "Thomas Modeneis"
+    }
+  ],
+  "optionalDependencies": {},
+  "scripts": {
+    "test": "gulp"
+  }
+}
