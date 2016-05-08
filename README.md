@@ -1,5 +1,7 @@
 # rethinkdb-cursor-processing
 
+![RethinkDB](https://rethinkdb.com/assets/images/docs/api_illustrations/quickstart.png)
+
 Easily and efficiently process large sets of rethinkdb documents from a cursor without loading the entire result set in memory at once.
 
 Really useful to avoid "FATAL ERROR - JS Allocation failed - process out of memory" when processin large datasets
