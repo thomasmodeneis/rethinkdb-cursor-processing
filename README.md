@@ -4,7 +4,7 @@
 
 Easily and efficiently process large sets of rethinkdb documents from a cursor without loading the entire result set in memory at once.
 
-Really useful to avoid "FATAL ERROR - JS Allocation failed - process out of memory" when processin large datasets
+Really useful to avoid "FATAL ERROR - JS Allocation failed - process out of memory" when processing large datasets
 
 ## API
 
@@ -88,7 +88,7 @@ function worker(row, cb) {
 ## License 
 The MIT License (MIT)
 Copyright (c) 2016 Thomas Modeneis
-
+```
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
 the Software without restriction, including without limitation the rights to
@@ -105,6 +105,7 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
 
 ## Credits
 * I've created this module inspired by [mongo-cursor-processing](https://github.com/jergason/mongo-cursor-processing) that does the same job but for MongoDB if you are interested.
