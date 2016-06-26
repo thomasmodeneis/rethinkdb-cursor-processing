@@ -9,9 +9,7 @@ Really useful to avoid "FATAL ERROR - JS Allocation failed - process out of memo
 ## API
 
 Install with `npm install rethinkdb-cursor-processing`. It exports a single
-function that looks like this:
-
-### `function rethinkdbStream(cursor, task, [concurrency], cb)
+function that looks like this: `function rethinkdbStream(cursor, task, [concurrency], cb)`
 
 * `cursor` Object - a Rethinkdb cursor, as returned from a rethinkdb query.
 * `task` Function - `function(item, done)` - a worker function that will be
@@ -33,7 +31,7 @@ var authKey = process.env.RETHINKAUTHKEY || "";
 var rethinkdb_table = process.env.RETHINKTABLE || "test";
 var conn;
 
-var rethinkdbStream = require('../index.js');
+var rethinkdbStream = require('rethinkdb-cursor-processing');
 
 //auth rethinkdb
 r.connect({
@@ -107,5 +105,5 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-## Credits
+## Other Modules
 * I've created this module inspired by [mongo-cursor-processing](https://github.com/jergason/mongo-cursor-processing) that does the same job but for MongoDB if you are interested.

@@ -1,6 +1,6 @@
 {
   "name": "rethinkdb-cursor-processing",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": {
     "name": "Thomas Modeneis"
   },
@@ -29,5 +29,12 @@
   "optionalDependencies": {},
   "scripts": {
     "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasmodeneis/rethinkdb-cursor-processing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thomasmodeneis/rethinkdb-cursor-processing/issues"
   }
 }
