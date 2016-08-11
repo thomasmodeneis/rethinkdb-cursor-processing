@@ -9,7 +9,7 @@ module.exports = function (cursor, worker, concurrency, cb) {
 
     var queue = async.queue(worker, concurrency);
     queue.isSaturated = function () {
-        return this.tasks.length >= this.concurrency;
+        return this.tasks ? this.tasks.length >= this.concurrency : false;
     };
 
     queue._wasSaturated = false;
